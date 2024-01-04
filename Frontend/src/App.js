@@ -23,6 +23,10 @@ import Footer from "./components/Footer";
 import NotificationMain from "./components/NotificationMain";
 import Popup from "./components/Popup";
 import ScrollToTop from "./components/ScrollToTop";
+import {disableReactDevTools} from "@fvilers/disable-react-devtools"
+
+if(process.env.NODE_ENV === 'prod'){disableReactDevTools()};
+
 function App() {
   return (
     <div>
